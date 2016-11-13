@@ -1,14 +1,11 @@
 # CSS Transitions & Animations
 
+## Objectives
+
+- Understand keyframe animation
+- Use CSS Transitions to animate elements
+- Use CSS Animations to create detailed animations
 - Describe the importance of prefixing CSS properties
-- Describe what a CSS transform is, and give some examples
-- Describe what it means to transition or animate in CSS
-- List the types of properties that can / can't be animated
-- Use the `transition` declaration to change element properties on events
-- Describe the purpose and syntax of css `keyframes`
-- List and describe the purpose of the `animation` properties
-- Compare & contrast CSS Transitions and Animations
-- Create complex animations using CSS animation properties
 - Compare & contrast using CSS and JS for animations
 
 ## Intro (10 minutes)
@@ -20,8 +17,11 @@ Today we'll be covering 3 major topics, each somewhat related:
 * CSS Animations
 * Prefixing
 
-**Transforms** are a set of CSS properties that take a an element and transform
-it's shape, e.g. rotating it, scaling it, skewing it, etc.
+
+CSS uses the same basic concepts used in hand-drawn animation - Keyframes:
+
+![Keyframes!](img/key_n_inbeteen.jpg)
+
 
 **Transitions** let us tell the browser how to change a property over time. For
 example, if the height of an element changes (due to a :hover selector, for
@@ -41,17 +41,7 @@ The easiest way to do this is with [prefix free](http://leaverou.github.io/prefi
 
 ## Group Breakouts (50 minutes)
 
-Breakout into groups of 4... each group will have 20 minutes to prepare a short
-explanation / demo of their assigned topic. Your demos should take **no longer than
-5 minutes**.
 
-| Group | Topic                                              |
-|-------|----------------------------------------------------|
-| 1     | CSS Transforms (No animation)                      |
-| 2     | CSS Transitions                                    |
-| 3     | CSS Animations (basic keyframes and syntax)        |
-| 4     | CSS Animations (timing functions)                  |
-| 5     | CSS Animations (iterations / repeats / direction ) |
 
 ## Break (10 minutes)
 
