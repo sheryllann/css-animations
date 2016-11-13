@@ -1,0 +1,59 @@
+*{
+	box-sizing: border-box;
+}
+html {
+	background-size: cover;
+}
+
+@keyframes block {
+  0% {
+    left: -100vw;
+  }
+  50% {
+  	left: 0vw;
+  }
+  100% {
+  	left: 20vw;
+  }
+}
+#dude {
+	position: absolute;
+    left: -100vw;
+    top: -200px;
+    height: 100%;
+    width: 100%;
+}
+#dude img {
+	width: 1000px;
+}
+#dude.block {
+	animation-name: block;
+	animation-duration: 10s; /* or: Xms */
+	animation-iteration-count: 10;
+	animation-direction: normal; /* or: alternate, reverse */
+	animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+	animation-fill-mode: forwards; /* or: backwards, both, none */
+	animation-delay: 0s; /* or: Xms */
+}
+#story {
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    font-size: 200px;
+    transition: all 3s ease;
+    color: #FFF;
+    z-index: 3;
+    background: #000;
+    padding: 20px;
+}
+#story.tell {
+	opacity: 1;
+	font-size: 300px;
+}
+
+
+
+
+
+

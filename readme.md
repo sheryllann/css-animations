@@ -14,6 +14,8 @@ So far, we've used JavaScript and jQuery to make elements move around on our pag
 
 Luckily, CSS Animations allows us to handle animations where they belong - in the stylesheet! CSS Animations also have a much lower impact on page loads. 
 
+CSS Animations are also a great way to add a layer of polish to your websites. Good design inpsires trust, so adding little effect to your website is a great way to impress users (and potential employers!).
+
 ## Concept (10 minutes)
 
 CSS uses the same basic concepts used in hand-drawn animation - Keyframes:
@@ -117,46 +119,38 @@ Wow! That's . . . interesting. It's bouncing alright, but it doesn't look very n
 
 **Transforms** allow you to rotate, skew, and pivot your HTML elements in 3D space! While you'll still be rendering your result on a 2D canvas - your computer screen - you can still move your object around like it were a physical object. This is both exciting and terrifying, as the CSS tranform property has [almost 2 dozen unique value types](http://www.w3schools.com/cssref/css3_pr_transform.asp).
 
+My suggestion? Keep it simple at first, then see how deep the rabbit hole goes. Let's start with a basic roate:
 
 
+```css
+	#greeting.rotate {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);   
+		transform: rotateY(180deg);
+	}
+```
+
+Now add the .rotate class to our click function and give it a go! You'll see our greeting flip around, showing you its reverse side. This is still live text, and a live HTML element - so you can imagine the possibilities hidden in the tranform property. 
+
+Sidenote - notice the -webkit- and -moz- prefixes on the above CSS? Those are called vendor prefixes. Some of the animations we're doing are so cutting edge, that they haven't been formally adopted by all browsers. In cases like this, you'll have to call the same value multiple times with vendor-specific prefixes to make sure that Chrome(webkit), Firefox(moz), IE(ms), and Opera(O) all display the animation correctly. Always leave a non-prefixed call in as well - as these properties are formally adopted, the need for the vendor prefix will dissapear, as will its support. 
+
+Not sure if you need a prefix? Go to [Can I Use](http://caniuse.com/) and search for the CSS property you want to use - you'll receieve a detailed breakdown of what browsers support it.
 
 
-**Prefixing** - If you're using chrome, you won't need to prefix any properties
-for this lesson, but in general, it's a good idea to check [Can I Use](caniuse.com)
-to see if you need to use prefixes to support most users. For CSS Animations,
-you should use prefixes to ensure support for Safari, IE, and other browsers.
+## Lab - Experiment time! (30 minutes)
 
-The easiest way to do this is with [prefix free](http://leaverou.github.io/prefixfree/).
+Obviously, this is just the tip of the iceberg. CSS can be used to create and animate [almost anything](https://pattle.github.io/simpsons-in-css/).
 
-## Group Breakouts (50 minutes)
+1.) Grab a picture from the internet, and make an animation for it. 
+2.) Fire the animation with a click function.
+3.) Below your image animation, write a block of text that tells the story of your animation. It should animate in some way too.
 
+### BONUS!
 
+Codepen is a great place to see what you can do with CSS animations. Fork some of the examples, and try playing with them!
 
-## Break (10 minutes)
+[15 Inspriring Examples of CSS Animation]https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937
 
-## Lab (50 minutes)
+## Questions / Recap  (10 minutes)
 
-Work with a partner to implement as many of these exercises as you can:
-* [CSS Accordion](https://github.com/ga-dc/css-accordion)
-* [DolphinCat!](https://github.com/ga-dc/dolphin-cat-css-animations)
-* [Clock](https://github.com/adambray/clock-bro)
-
-### Bonuses
-
-Look at the following examples, try to re-create them from scratch using as little
-starter code as possible.
-
-* [Animated Buttons](http://tympanus.net/Tutorials/AnimatedButtons/index.html) (Transitions and Animations)
-* [Image Hover Effects](http://tympanus.net/Tutorials/OriginalHoverEffects/) (Transitions and Animations)
-* [Solar System in CSS](http://neography.com/journal/our-solar-system-in-css3/) (Transitions and Animations)
-
-## Break (10 Minutes)
-
-## Questions / Recap  (20 minutes)
-
-### CSS / JS Animations
-
-CSS Animations are easy and mostly compatible, so they're often a good choice
-for basic animation needs. For anything more complex, such as animation that
-depends on user input, you'll need to use Javascript. There are good libraries
-for animation, including jQuery UI, and [GSAP (Greensock Animation Platform)](http://greensock.com/gsap)
+CSS Animations are super cross-browser compatible, simple to implement, and take much fewer resources than JavaScript animations. And users love them! When implementing your next project, consider how you can add in simple animations and transforms to improve your user experience.
