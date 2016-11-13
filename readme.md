@@ -20,7 +20,7 @@ Today we'll be covering 3 major topics, each somewhat related:
 
 CSS uses the same basic concepts used in hand-drawn animation - Keyframes:
 
-![Keyframes!](img/key_n_inbeteen.jpg)
+![Keyframes!](http://www.utdallas.edu/atec/midori/Handouts/history_files/key_n_inbetween.jpg)
 
 
 **Transitions** let us tell the browser how to change a property over time. For
