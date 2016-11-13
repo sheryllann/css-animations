@@ -11,6 +11,7 @@
     font-size: 70px;
     padding: 40px;
     text-align: left;
+    transition: all 2s ease;
 }
 #greeting.alt {
 	width: 600px;
