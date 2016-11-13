@@ -56,21 +56,65 @@ Now let's reload and check out our animation - way smoother! Feel free to play w
 You'll notice that some properties animated their transition, while others didn't - for instance, our background color transitioned beautifully through the color spectrum, but our font-family simply toggled into the new font. That's because font-family can't be animated - its way to complex for a browser to figure out on its own. However, while there are some values like font-family that can't be animated, you'll find that most cosmetic properties can be.
 
 
+## Keyframe Animations (10 minutes)
 
-
-
-
-
-
-
-
-
-
+But why stop there? We can go further!
 
 **Animations** are similar to transitions, in that they let us have properties
 change over time, but they give us more control over how those changes happen.
 For example, we have more control over how the animation repeats, change between
 multiple values at once, etc.
+
+To keyframe animate a CSS element, we need two components - the animation structure itself, and then a call to the animation with specific instructions.
+Let's write a keyframe animation that will make our greeting bounce:
+
+```css
+	@keyframes bounce {
+		0% {
+			position: relative;
+			top: 0px;
+		}
+		50% {
+			position: relative;
+			top: -120px;
+		}
+		100% {
+			position: initial;
+			top: 0px;
+		}
+	}
+```
+Here, we're able to see our keyframe sturcture even more clearly - they're broken up by percentages, 100% being the complete duration of the animation (we'll set the specific timing in our animation call). We can add as many keyframes as we want, and as few as two (0 and 100%). At each point, we can specify a new set of css properties. 
+
+While we could go nuts and add all sorts of property changes in here, I would encourage you to think of Keyframe Animations the same way you would JS prototypal functions - they work best when they are clear, simple, and extensible. Our 'bounce' animation serves a single function - to bounce an element. By keeping it style-neutral, we allow ourselves to use the animation on lots of different elements.
+
+Now that we have a basic animation set up, let's call it on our #greetings element:
+
+```css
+	#greeting.animated {
+		animation-name: bounce;
+		animation-duration: .5s; /* or: Xms */
+		animation-iteration-count: 10;
+		animation-direction: normal; /* or: alternate, reverse */
+		animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+		animation-fill-mode: forwards; /* or: backwards, both, none */
+		animation-delay: 0s; /* or: Xms */
+	}
+``` 
+The above call runs the animation as soon as the class .animated is added to our element (if we wanted a delay, we could adjust animation-delay). We start by calling the animation by its name - bounce. We tell it how long to take in animation-duration. In fact, there's so many animation options, I would encourage you to look them up and use whatever properties make the most sense for you:
+
+[http://www.w3schools.com/cssref/css3_pr_animation-direction.asp](http://www.w3schools.com/cssref/css3_pr_animation-direction.asp)
+
+
+
+
+
+
+
+
+
+
+
 
 **Prefixing** - If you're using chrome, you won't need to prefix any properties
 for this lesson, but in general, it's a good idea to check [Can I Use](caniuse.com)

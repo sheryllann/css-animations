@@ -25,3 +25,36 @@
 	padding: 200px 60px 60px 60px;
 	text-align: right;
 }
+
+@keyframes bounce {
+  0% {
+  	position: relative;
+    top: 0px;
+  }
+  50% {
+  	position: relative;
+    top: -120px;
+  }
+  100% {
+  	position: initial;
+    top: 0px;
+  }
+}
+#greeting.animated {
+	animation-name: bounce;
+	animation-duration: .5s; /* or: Xms */
+	animation-iteration-count: 10;
+	animation-direction: normal; /* or: alternate, reverse */
+	animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+	animation-fill-mode: forwards; /* or: backwards, both, none */
+	animation-delay: 0s; /* or: Xms */
+}
+
+
+
+
+
+
+
+
+
