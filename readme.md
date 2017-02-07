@@ -146,7 +146,7 @@ Obviously, this is just the tip of the iceberg. CSS can be used to create and an
 
 Codepen is a great place to see what you can do with CSS animations. Fork some of the examples, and try playing with them!
 
-[15 Inspriring Examples of CSS Animation]https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937
+[15 Inspriring Examples of CSS Animation](https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937)
 
 ## Questions / Recap  (10 minutes)
 
