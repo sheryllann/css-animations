@@ -138,11 +138,9 @@ Now add the `rotate` class to our click function and give it a go! You'll see ou
 
 Obviously, this is just the tip of the iceberg. CSS can be used to create and animate [almost anything](https://pattle.github.io/simpsons-in-css/). Let's dig in and see what we can create!
 
-1.) Grab a picture from the internet, and make an animation for it. 
-
-1.) Fire the animation with a click function.
-
-1.) Below your image animation, write a block of text that tells the story of your animation. It should animate in some way too.
+1. Grab a picture from the internet, and make an animation for it. 
+1. Fire the animation with a click function.
+1. Below your image animation, write a block of text that tells the story of your animation. It should animate in some way too.
 
 ### BONUS!
 
