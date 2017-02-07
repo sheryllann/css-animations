@@ -128,11 +128,10 @@ My suggestion? Keep it simple at first, then see how deep the rabbit hole goes. 
 	}
 ```
 
-Now add the .rotate class to our click function and give it a go! You'll see our greeting flip around, showing you its reverse side. This is still live text, and a live HTML element - so you can imagine the possibilities hidden in the tranform property. 
+Now add the `rotate` class to our click function and give it a go! You'll see our greeting flip around, showing you its reverse side. This is still live text, and a live HTML element - so you can imagine the possibilities hidden in the tranform property. 
 
-Sidenote - notice the -webkit- and -moz- prefixes on the above CSS? Those are called vendor prefixes. Some of the animations we're doing are so cutting edge, that they haven't been formally adopted by all browsers. In cases like this, you'll have to call the same value multiple times with vendor-specific prefixes to make sure that Chrome(webkit), Firefox(moz), IE(ms), and Opera(O) all display the animation correctly. Always leave a non-prefixed call in as well - as these properties are formally adopted, the need for the vendor prefix will dissapear, as will its support. 
-
-Not sure if you need a prefix? Go to [Can I Use](http://caniuse.com/) and search for the CSS property you want to use - you'll receieve a detailed breakdown of what browsers support it.
+> Sidenote: notice the `-webkit-` and `-moz-` prefixes on the above CSS? Those are called vendor prefixes. Some of the animations we're doing are so cutting edge, that they haven't been formally adopted by all browsers. In cases like this, you'll have to call the same value multiple times with vendor-specific prefixes to make sure that Chrome(webkit), Firefox(moz), IE(ms), and Opera(O) all display the animation correctly. Always leave a non-prefixed call in as well - as these properties are formally adopted, the need for the vendor prefix will dissapear, as will its support. 
+> Not sure if you need a prefix? Go to [Can I Use](http://caniuse.com/) and search for the CSS property you want to use - you'll receieve a detailed breakdown of what browsers support it.
 
 
 ## Lab - Experiment time! (30 minutes)
