@@ -40,7 +40,7 @@ So now that we have Keyframes, how do we generate our inbetweens? With CSS, ther
 
 ## Transitions (10 minutes)
 
-**Transitions** let us tell the browser how to change a property over time. Let's add a new property to the #greeting CSS:
+**Transitions** let us tell the browser how to change a property over time. Let's add a new property to the `#greeting` CSS:
 
 ```css
 	transition: all 2s ease;
@@ -84,7 +84,7 @@ Let's write a keyframe animation that will make our greeting bounce:
 		}
 	}
 ```
-Here, we're able to see our keyframe sturcture even more clearly - they're broken up by percentages, 100% being the complete duration of the animation (we'll set the specific timing in our animation call). We can add as many keyframes as we want, and as few as two (0 and 100%). At each point, we can specify a new set of css properties. 
+Here, we're able to see our keyframe sturcture even more clearly - they're broken up by percentages, 100% being the complete duration of the animation (we'll set the specific timing in our animation call). We can add as many keyframes as we want, and as few as one (100%). At each point, we can specify a new set of css properties. 
 
 While we could go nuts and add all sorts of property changes in here, I would encourage you to think of Keyframe Animations the same way you would JS prototypal functions - they work best when they are clear, simple, and extensible. Our 'bounce' animation serves a single function - to bounce an element. By keeping it style-neutral, we allow ourselves to use the animation on lots of different elements.
 
@@ -101,11 +101,11 @@ Now that we have a basic animation set up, let's call it on our `#greetings` ele
 		animation-delay: 0s; /* or: Xms */
 	}
 ``` 
-The above call runs the animation as soon as the class `animated` is added to our element (if we wanted a delay, we could adjust animation-delay). We start by calling the animation by its name - bounce. We tell it how long to take in animation-duration. In fact, there's so many animation options, I would encourage you to look them up and use whatever properties make the most sense for you:
+The above call runs the animation as soon as the class `animated` is added to our element (if we wanted a delay, we could adjust `animation-delay`). We start by calling the animation by its name - bounce. We tell it how long to take in animation-duration. In fact, there's so many animation options, I would encourage you to look them up and use whatever properties make the most sense for you:
 
-[http://www.w3schools.com/cssref/css3_pr_animation-direction.asp](http://www.w3schools.com/cssref/css3_pr_animation-direction.asp)
+[https://www.w3schools.com/cssref/css3_pr_animation.asp](https://www.w3schools.com/cssref/css3_pr_animation.asp)
 
-As a final step, let's add our new `animated` class to our click function so we can test it out:
+As a final step, let's swap in our new `animated` class to our click function so we can test it out:
 
 ```javascript
 	$( "#greeting" ).toggleClass( "animated" );
@@ -140,7 +140,7 @@ Obviously, this is just the tip of the iceberg. CSS can be used to create and an
 
 1. Grab a picture from the internet, and make an animation for it. 
 1. Fire the animation with a click function.
-1. Below your image animation, write a block of text that tells the story of your animation. It should animate in some way too.
+1. Below your image animation, write a block of text that tells the story of your animation. Your text should animate in some way too.
 
 ### BONUS!
 
